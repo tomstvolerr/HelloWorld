@@ -6,24 +6,24 @@ public class Zadanie5 {
     public static void main(String[] args) {
         System.out.println("Введите 1-е число");
         Scanner scannerA = new Scanner(System.in);
-        int A = scannerA.nextInt();
+        double chislo1 = scannerA.nextInt();
         System.out.println("Введите 2-е число");
         Scanner scannerB = new Scanner(System.in);
-        int B = scannerB.nextInt();
+        double chislo2 = scannerB.nextInt();
         System.out.println("Введите один из символов ‘+’, ‘-’, ‘*’ или ‘/’");
         Scanner scannerC = new Scanner(System.in);
-        String C = scannerC.next();
-        if ("+".equals(C)) {
-            System.out.println(A + B);
+        String znakDeistviya = scannerC.next();
+        if ("+".equals(znakDeistviya)) {
+            System.out.println(chislo1 + chislo2);
         }
-        if ("-".equals(C)) {
-            System.out.println(A - B);
+        if ("-".equals(znakDeistviya)) {
+            System.out.println(chislo1 - chislo2);
         }
-        if ("*".equals(C)) {
-            System.out.println(A * B);
+        if ("*".equals(znakDeistviya)) {
+            System.out.println(chislo1 * chislo2);
         }
-        if ("/".equals(C)) {
-            System.out.println(A / B);
+        if ("/".equals(znakDeistviya)) {
+            System.out.println(chislo1 / chislo2);
         }
     }
 }
